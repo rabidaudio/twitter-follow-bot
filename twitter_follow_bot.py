@@ -22,11 +22,11 @@ from twitter import Twitter, OAuth, TwitterHTTPError
 import os
 
 # put your tokens, keys, secrets, and Twitter handle in the following variables
-OAUTH_TOKEN = ""
-OAUTH_SECRET = ""
-CONSUMER_KEY = ""
-CONSUMER_SECRET = ""
-TWITTER_HANDLE = ""
+OAUTH_TOKEN = os.environ['token']
+OAUTH_SECRET = os.environ['secret']
+CONSUMER_KEY = os.environ['consumer_key']
+CONSUMER_SECRET = os.environ['consumer_secret']
+TWITTER_HANDLE = os.environ['username']
 
 # put the full path and file name of the file you want to store your "already followed"
 # list in
